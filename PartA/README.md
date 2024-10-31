@@ -4,6 +4,8 @@ The `pre-commit` hook in this project serves as an automated code security check
 3. Outputs any security issues found into a `bandit_report.csv` file.
 4. Blocks commits if security vulnerabilities are detected, prompting developers to review and resolve issues before committing.
 
+The report.csv file is a result as of updating the mining.py file with an eval() function.
+
 ## Example Usage
 
 ### Commit Blocking Example
