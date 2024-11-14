@@ -1,6 +1,6 @@
 # Fuzzing with `fuzz.py`
 
-The `fuzz.py` script automatically fuzzes 5 Python methods of your choice to identify any bugs, crashes, or unexpected behavior.
+The `fuzz.py` script automatically fuzzes 5 Python methods to identify any bugs, crashes, or unexpected behavior.
 
 ## How it works:
 1. **Fuzzes 5 Python methods** randomly by generating various inputs.
