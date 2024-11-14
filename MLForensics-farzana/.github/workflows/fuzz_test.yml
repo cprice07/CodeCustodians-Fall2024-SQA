@@ -1,0 +1,34 @@
+name: Fuzz Testing
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  fuzz:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          echo "No dependencies to install"
+
+      - name: Run fuzz testing
+        run: |
+          python fuzz.py
+          cat fuzz_report.log
+
+      - name: Upload Fuzz Report
+        uses: actions/upload-artifact@v2
+        with:
+          name: fuzz_report
+          path: fuzz_report.log
