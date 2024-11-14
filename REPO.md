@@ -18,12 +18,13 @@
 ## Part B - Corah Price
 
 ### 1. Activities Done
-   - List of major activities conducted in Part B.
-   - Description of key tasks, milestones, and any notable achievements.
+   - **Created `fuzz.py` Script**: Developed a Python script (`fuzz.py`) that automatically fuzzes 5 Python methods to identify any bugs or unexpected behavior. The methods included were `int()`, `list.append()`, `open()`, `json.loads()`, and `str.replace()`.
+   - **Method Selection**: Carefully chose methods that cover a variety of Python functionality, including type conversions, file operations, string manipulations, and JSON parsing. This choice ensures a broad test of the codebase.
 
 ### 2. Lessons Learned
-   - Key takeaways from Part B.
-   - Reflections on what worked well and what could be improved.
+   - **Bug Discovery and Reporting**: The fuzzing script successfully discovered bugs and unexpected behaviors, which were immediately recorded in a structured format (`fuzz_report.log`). This enabled quick identification of areas that required attention and fixes.
+   - **Handling Complex Bugs**: Some of the issues discovered during fuzzing were difficult to reproduce consistently, especially those that involved certain edge cases. Future fuzzing scripts could benefit from more advanced techniques, such as pattern matching or heuristics, to pinpoint the exact cause of inconsistencies.
+   - **Expanding Method Coverage**: While five methods were a good starting point, there is potential to expand fuzzing to more complex methods or entire code modules. Fuzzing more methods would help ensure broader code coverage and identify additional edge cases.
 
 ---
 
