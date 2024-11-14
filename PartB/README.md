@@ -5,7 +5,7 @@ The `fuzz.py` script automatically fuzzes 5 Python methods of your choice to ide
 ## How it works:
 1. **Fuzzes 5 Python methods** randomly by generating various inputs.
 2. **Reports any discovered bugs** or unexpected behavior during the fuzzing process.
-3. The results of the fuzz testing, including any issues found, will be logged into a `fuzz_report.csv` file for review.
+3. The results of the fuzz testing, including any issues found, will be logged into a `fuzz_report.log` file for review.
 
 ## Methods Being Fuzzed:
 1. **`int()`**  
@@ -24,7 +24,7 @@ The `fuzz.py` script automatically fuzzes 5 Python methods of your choice to ide
    Replaces substrings in a string. Fuzzing includes replacing substrings that don’t exist or using unusual data types.
 
 ## Results:
-Any bugs or unexpected behavior discovered will be logged into a `fuzz_report.csv` file for easy tracking
+Any bugs or unexpected behavior discovered will be logged into a `fuzz_report.log` file for easy tracking
 
 <img width="1501" alt="Screenshot 2024-11-14 at 10 54 35 AM" src="https://github.com/user-attachments/assets/7f7e4b2f-dbcf-401a-8046-47e8935b0198">
 
