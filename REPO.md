@@ -31,21 +31,28 @@
 ## Part C - Ayush Singh
 
 ### 1. Activities Done
-   - List of major activities conducted in Part C.
-   - Description of key tasks, milestones, and any notable achievements.
+   - **Enhanced fuzz.py for Fuzz Testing**: Modified the existing fuzz.py script to test five additional Python functionalities:-
+   String splitting `(split)`
+   String stripping `(strip)`
+   Integer conversion `(int)`
+   List sorting `(sorted)`
+   Dictionary key retrieval `(dict.get)`
+   - Implemented detailed logging to `fuzz_forensics.log`, capturing timestamps, method names, inputs, outputs, and exceptions.
+   - Created `fuzz_report.log` to track and analyze bugs discovered during fuzz testing.
 
 ### 2. Lessons Learned
-   - Key takeaways from Part C.
-   - Reflections on what worked well and what could be improved.
-
+   - **Importance of Detailed Logging**: Comprehensive logs were invaluable in identifying and reproducing issues.
+   - **Testing Edge Cases**: Realized the significance of robust test cases for detecting unexpected behaviors.
+   
 ---
 
 ## Part D - Ayush Singh
 
 ### 1. Activities Done
-   - List of major activities conducted in Part D.
-   - Description of key tasks, milestones, and any notable achievements.
+   - **Integrated Codacy Analysis CLI with GitHub Actions**: Added a GitHub Actions workflow to automate code quality checks using Codacy. Configured the workflow to run on every push, ensuring consistent analysis of the codebase.
+   - Created .github/workflows/codacy-analysis.yaml to define the CI pipeline.
+   - Configured the pipeline to checkout the code and run Codacy Analysis CLI.
 
 ### 2. Lessons Learned
-   - Key takeaways from Part D.
-   - Reflections on what worked well and what could be improved.
+   - **CI Benefits**: Automating code quality checks reduces manual effort and ensures adherence to coding standards.
+   - **Tool Usage**: Gained experience in configuring and using Codacy and GitHub Actions for continuous integration.
